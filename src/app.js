@@ -1,10 +1,9 @@
-// src/app.js
-import express from 'express';
-import ticketRouter from './routes/tickets.route.js';
+import "dotenv/config";
+
+import express from "express";
 
 export const app = express();
-const port = 3333;
 
-app.use(express.json());
-
-app.use('/tickets', ticketRouter);
+app.get("/", function (req, res) {
+    return res.status(200).json({ message: "working" });
+});
