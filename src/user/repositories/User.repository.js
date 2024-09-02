@@ -1,4 +1,4 @@
-import UserModel from "../models/User.model.js";
+import UserModel from "../../database/models/User.model.js";
 
 export class UserRepository {
     constructor() {

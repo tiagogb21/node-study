@@ -2,7 +2,7 @@ import { expect } from "chai";
 import sinon from "sinon";
 import { faker } from "@faker-js/faker";
 
-import UserModel from "../src/user/models/User.model.js";
+import UserModel from "../src/database/models/User.model.js";
 import { UserRepository } from "../src/user/repositories/User.repository.js";
 
 describe("UserRepository", function () {
