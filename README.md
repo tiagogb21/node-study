@@ -99,3 +99,31 @@ Nota: Em caso de erro, o teste será bloqueado e falhará, ajudando a identifica
         - Checar o número de vezes que um método externo é invocado.
 
         - Confirmar que métodos externos são chamados com os parâmetros corretos.
+
+## Estrutura da Aplicação
+
+### Model:
+
+    - Representa a estrutura dos dados da aplicação.
+
+    - Define como os dados são armazenados e manipulados, geralmente mapeando as tabelas de um banco de dados
+
+### Repository:
+
+    - Responsável pela comunicação direta com o banco de dados.
+
+    - Encapsula as operações de acesso a dados, como consultas, inserções, atualizações e exclusões.
+
+    obs.: Facilita a troca de banco de dados ou a modificação da lógica de acesso a dados sem impactar outras camadas.
+
+### Service:
+
+    - Contém a lógica de negócios da aplicação.
+
+    - Ela coordena a interação entre os repositórios e outras partes do sistema, aplicando as regras e processos da aplicação.
+
+### Controller
+
+    - É responsável por gerenciar as requisições HTTP que chegam à aplicação.
+
+    - Atua como um intermediário entre o cliente (frontend ou API consumer) e a lógica de negócios (camada de Service).
